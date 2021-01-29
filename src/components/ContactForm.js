@@ -42,7 +42,7 @@ export default function ContactForm({ addContact }) {
 
 
     return (
-        <form key='AddContactForm' onSubmit={handleSubmit}>
+        <form key='AddContactForm' onSubmit={handleSubmit} autoComplete="off">
             <Input label="Name" type="text" name="name" value={name} onChange={handleNameChange} />
             <Input label="Number" type="text" name="number" value={number} onChange={handleNamberChange} />
             <Button type='submit'  children='Add contact'/>
